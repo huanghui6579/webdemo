@@ -1,0 +1,44 @@
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
+//To move navigation buttons outside use these settings:
+
+
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+	top: 35%;
+	margin: 0;
+	border-radius: 0;
+	background: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0;
+} 
+
+.owl-theme .owl-controls .owl-buttons div {
+	position: absolute;
+	top: 35%;
+	margin: 0;
+	border-radius: 0;
+	background: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons .icon-chevron-left {
+	
+} 
