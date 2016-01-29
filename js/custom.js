@@ -14,7 +14,7 @@ jQuery(function ($) { "use strict";
 	/*	FitVids js
 	/* =========================================================================== */
 	
-	//$(".media-wrapper").fitVids();
+	$(".media-wrapper").fitVids();
 
 	
 	/* ========================================================================= */
@@ -54,7 +54,7 @@ jQuery(function ($) { "use strict";
 	/*	Post image slider
 	/* ========================================================================= */
 	
-	/*$("#post-thumb, #gallery-post").owlCarousel({
+	$("#post-thumb, #gallery-post").owlCarousel({
 
 		navigation : true,
 		pagination : false,
@@ -64,16 +64,16 @@ jQuery(function ($) { "use strict";
 		singleItem:true,
 		navigationText : ["<i class='fa fa-angle-left fa-2x'></i>","<i class='fa fa-angle-right fa-2x'></i>"]
 
-	});*/
+	});
 	
-	/*$("#features").owlCarousel({
+	$("#features").owlCarousel({
 		navigation : false,
 		pagination : true,
 		slideSpeed : 800,
 		singleItem : true,
 		transitionStyle : "fadeUp",
 		paginationSpeed : 800,
-	});*/
+	});
 
 
 	/* ========================================================================= */
@@ -147,7 +147,7 @@ jQuery(function ($) { "use strict";
 	/*	Skills Chart
 	/* ========================================================================= */
 
-	/*$(".chart").appear(function () {
+	$(".chart").appear(function () {
 		$(".chart").easyPieChart({
 			easing: "easeOutBounce",
 			barColor: "#6CB670",
@@ -158,27 +158,27 @@ jQuery(function ($) { "use strict";
 				$(this.el).find(".percent").text(Math.round(n))
 			}
 		})
-	});*/
+	});
 	
 	
 	/* ========================================================================= */
 	/*	Twitter Feed
 	/* ========================================================================= */
-	/*
+	
 	$(".tweet").twittie({
         dateFormat: "%b. %d, %Y",
         template: "{{tweet}}",
         count: 1
-    });*/
+    });
 
 
 	/* ========================================================================= */
 	/*	Portfolio Filtering Hook
 	/* =========================================================================  */
 
-	/*$('#og-grid').mixItUp(); // Portfolio filter
+	$('#og-grid').mixItUp(); // Portfolio filter
 
-	Grid.init(); //Portfolio Grid Expand*/
+	Grid.init(); //Portfolio Grid Expand
 	
 	
 	/* ========================================================================= */
@@ -186,13 +186,13 @@ jQuery(function ($) { "use strict";
 	/* =========================================================================  */
  
 	//Init the carousel
-	/*$("#testimonials").owlCarousel({
+	$("#testimonials").owlCarousel({
 		slideSpeed: 500,
 		paginationSpeed: 500,
 		singleItem: true,
 		pagination : true,
 		transitionStyle : "backSlide"
-	});*/
+	});
 
 
 	/* ========================================================================= */
@@ -284,7 +284,7 @@ jQuery(function ($) { "use strict";
 	/*	Google Map Customization
 	/* =========================================================================  */
 
-	/*function initialize() {
+	function initialize() {
 
 		var myLatLng = new google.maps.LatLng(22.333851, 91.812256);
 
@@ -396,9 +396,9 @@ jQuery(function ($) { "use strict";
 
 		map.mapTypes.set('roadatlas', usRoadMapType);
 		map.setMapTypeId('roadatlas');
-	}*/
+	}
 
-	/*google.maps.event.addDomListener(window, "load", initialize);*/
+	google.maps.event.addDomListener(window, "load", initialize);
 
 
 });
@@ -481,14 +481,14 @@ $(function() {
 
 "use strict";
 
-/*function parallaxInit() {
+function parallaxInit() {
 	$('#counter').parallax("50%", 0.3);
 	$('#team-skills').parallax("50%", 0.3);
 	$('#twitter-feed').parallax("50%", 0.3);
 	$('#testimonial').parallax("50%", 0.3);
-}*/
+}
 
 $(window).bind("load", function () {
-    //parallaxInit()
+    parallaxInit()
 });
                             
