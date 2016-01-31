@@ -67,14 +67,39 @@ jQuery(function ($) { "use strict";
 	});
 	
 	$("#features").owlCarousel({
-		navigation : false,
+		navigation : true,
 		pagination : true,
-		slideSpeed : 800,
+		slideSpeed : 500,
 		singleItem : true,
-		transitionStyle : "fadeUp",
-		paginationSpeed : 800,
-	});
+		autoPlay: false,
+		stopOnHover: true,
+		paginationSpeed : 500,
+		rewindSpeed:500,
+		navigationText : ["<i class='fa fa-angle-left fa-5x'></i>","<i class='fa fa-angle-right fa-5x'></i>"],
+		beforeMove: function(elem) {
+			var prevPosition = this.prevItem;
+			var curPosition = this.currentItem;
+			var findResult = $(elem).find(".features-item");
+			var prevObj = findResult.eq(prevPosition);
+			var curObj = findResult.eq(curPosition);
+			prevObj.children(".feature-content").removeClass("animated");
+			
+		},
+		afterMove: function(elem) {
+			var prevPosition = this.prevItem;
+			var curPosition = this.currentItem;
+			var findResult = $(elem).find(".features-item");
+			var curObj = findResult.eq(curPosition);
+			var prevObj = findResult.eq(prevPosition);
+			var curContent = curObj.children(".feature-content");
+			curContent.removeClass("show").addClass("hide");
+			setTimeout(function() {
+				prevObj.children(".feature-content").removeClass("show").addClass("hide");
+				curContent.removeClass("hide").addClass("show animated");
+			}, 600);
+		}
 
+	});
 
 	/* ========================================================================= */
 	/*	Menu item highlighting

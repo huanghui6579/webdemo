@@ -1,44 +1,129 @@
 #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-} 
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#owl-demo .item div {
+  width: 100%;
+  height: 600px;
+}
+
+#owl-demo .item .item-first {
+  background: #f00;
+}
+
+#owl-demo .item .item-second {
+  background: #0f0;
+}
+
+#owl-demo .item .item-third {
+  background: #00f;
+}
 
 //To move navigation buttons outside use these settings:
 
-
-.owl-theme .owl-controls .owl-buttons div {
-	position: absolute;
-	top: 35%;
-	margin: 0;
-	border-radius: 0;
-	background: none;
-	padding-top: 5px;
-	padding-bottom: 5px;
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 20px;
 }
 
+.owl-theme .owl-controls {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+  top: 50%;
+  margin: 0;
+  margin-top: -20px;
+  border-radius: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: none;
+} 
+
+.owl-theme .owl-controls .owl-buttons div:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-prev {
+  left: 20px;
+}
+
+.owl-theme .owl-controls .owl-buttons div.owl-next {
+  right: 20px;
+}
+
+.owl-theme .owl-controls .owl-pagination {
+  position: relative;
+  bottom: 50px;
+}
+
+/*.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+}
+ 
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
 .owl-theme .owl-controls .owl-buttons .owl-prev{
-  left: 0;
-} 
-
-.owl-theme .owl-controls .owl-buttons div {
-	position: absolute;
-	top: 35%;
-	margin: 0;
-	border-radius: 0;
-	background: none;
-	padding-top: 5px;
-	padding-bottom: 5px;
+  left: -45px;
+  top: 55px; 
 }
-
-.owl-theme .owl-controls.clickable .owl-buttons div:hover{
-	background: rgba(0, 0, 0, 0.5);
-}
-
+ 
 .owl-theme .owl-controls .owl-buttons .owl-next{
-  right: 0;
-}
+  right: -45px;
+  top: 55px;
+}*/
 
-.owl-theme .owl-controls .owl-buttons .icon-chevron-left {
-	
-} 
+ /* .owl-theme .owl-controls .owl-buttons div {
+ 	position: absolute;
+ 	top: 35%;
+ 	margin: 0;
+ 	border-radius: 0;
+ 	background: none;
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+ } 
+ 
+ .owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0;
+ }  
+ 
+ .owl-theme .owl-controls .owl-buttons div {
+ 	position: absolute;
+ 	top: 35%;
+ 	margin: 0;
+ 	border-radius: 0;
+ 	background: none;
+ 	padding-top: 5px;
+ 	padding-bottom: 5px;
+ } 
+ 
+ .owl-theme .owl-controls.clickable .owl-buttons div:hover{
+ 	background: rgba(0, 0, 0, 0.5);
+ } 
+ 
+ .owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 0;
+ }
+ 
+ .owl-theme .owl-controls .owl-pagination {
+ 	position: relative;
+ 	bottom: 50px;
+ }
+ 
+ .owl-theme .owl-controls .owl-buttons .icon-white {
+ 	width: 48px;
+ 	height: 48px;
+ 
+ } */
+
+

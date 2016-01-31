@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/flexslider.css">
+
+	<style type="text/css">
+		body {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		/* .flex-direction-nav a {
+			background: url(img/arr.png);
+		} */
+	</style>
+
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	$(function() {
+		$('.flexslider').flexslider({
+			start: function(slider){
+		        $('.flexslider').resize();
+		    },
+			animation: "slide"
+		});
+	});
+	</script>
+
+</head>
+<body>
+	<!-- Place somewhere in the <body> of your page -->
+	<div class="flexslider">
+	  <ul class="slides">
+	    <li>
+	      <img src="img/s1.jpg" />
+	    </li>
+	    <li>
+	      <img src="img/s2.jpg" />
+	    </li>
+	    <li>
+	      <img src="img/s3.jpg" />
+	    </li>
+	    <li>
+	      <img src="img/s4.jpg" />
+	    </li>
+	  </ul>
+	</div>
+</body>
+</html>

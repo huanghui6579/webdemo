@@ -57,6 +57,11 @@
     .author-bio h5 {
         margin-left: 70px;
     }
+
+    /* main-features slider */
+    #main-features .img-responsive {
+        height: 500px;
+    }
 }
 
 /*============================================================
@@ -158,6 +163,11 @@
 	/* singla blog page */
     .author-social {
         margin-left: 0;
+    }
+
+    /* main-features slider */
+    #main-features .img-responsive {
+        height: 400px;
     }
 }
 
@@ -394,6 +404,11 @@
     .author-avatar {
         margin-right: 10px;
     }
+
+    /* main-features slider */
+    #main-features .img-responsive {
+        height: 280px;
+    }
 }
 
 
@@ -517,5 +532,17 @@
 	/* blog page */
     .tab-post-nav li a {
         padding: 10px 15px;
+    }
+
+    /* main-features slider */
+    #main-features .img-responsive {
+        height: 400px;
+    }
+}
+
+@media (min-height: 480px) and (max-height: 800px)  {
+    /* main-features slider */
+    #main-features .img-responsive {
+        height: 520px;
     }
 }

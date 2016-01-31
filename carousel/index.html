@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>首页</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>main</title>
+	<link rel="stylesheet" href="css/bootstrapTheme.css">
 	<!-- Basic stylesheet -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	 
@@ -10,8 +11,9 @@
 	<link rel="stylesheet" href="css/owl.theme.css">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+	<!-- <link rel="stylesheet" href="css/custom.css"> -->
 	
-
 	<!-- Include js plugin -->
 	<script src="js/jquery-1.11.0.min.js"></script>
 	<script src="js/owl.carousel.js"></script>
@@ -20,13 +22,19 @@
 
 	<script type="text/javascript">
 		$(function() {
+
 			$("#owl-demo").owlCarousel({
 			
 			    navigation : true, // Show next and prev buttons
 			    navigationText: [
+			      "<i class='icon-chevron-left icon-white'></i>",
+			      "<i class='icon-chevron-right icon-white'></i>"
+			    ],
+			    /*navigationText: [
 			      "<img src='img/ic_slider_arrow.png' class='icon-chevron-left icon-white'></img>",
 			      "<img src='img/ic_slider_arrow.png' class='icon-chevron-right icon-white'></img>"
-			    ],
+			    ],*/
+			    singleItem:true,
 			    slideSpeed : 300,
 			    paginationSpeed : 400,
 			    singleItem:true,
@@ -44,22 +52,55 @@
 			});
 		});
 	</script>
+
 </head>
 <body>
 	
 
-	
+
     <div id="owl-demo" class="owl-carousel owl-theme">
     	<div class="item">
-    		<img src="img/fullimage1.jpg" alt="The Last of us">
-		</div>
+    		<div class="item-first"></div>
+    		<!-- <img src="img/fullimage1.jpg" alt="The Last of us"> -->
+    	</div>
     	<div class="item">
-    		<img src="img/fullimage2.jpg" alt="GTA V">
-		</div>
+    		<div class="item-second"></div>
+    		<!-- <img src="img/fullimage2.jpg" alt="GTA V"> -->
+    	</div>
     	<div class="item">
-    		<img src="img/fullimage3.jpg" alt="Mirror Edge">
-		</div>
+    		<div class="item-third"></div>
+    		<!-- <img src="img/fullimage3.jpg" alt="Mirror Edge"> -->
+    	</div>
     </div>
+
+
+
+
+      <!-- CAROUSEL -->
+      <!-- <section id="jm-Section-CARU">
+        CAROUSEL NAV
+        <nav class="next" style="display: none;">
+          <a class="customNextBtn" href="#">&nbsp;</a>
+        </nav>
+        <nav class="prev" style="display: none;">
+          <a class="customPrevBtn" href="#">&nbsp;</a>
+        </nav>
+        END NAV
+        <div class="owl-carousel" id="owl-example">
+          <div class="item">
+          		<img src="img/fullimage1.jpg" alt="The Last of us">
+          		</div>
+          	<div class="item">
+          		<img src="img/fullimage2.jpg" alt="GTA V">
+          		</div>
+          	<div class="item">
+          		<img src="img/fullimage3.jpg" alt="Mirror Edge">
+          		</div>
+        </div>
+      </section> -->
+      <!--  END CAROUSEL -->
+
+
 
 </body>
 </html>
