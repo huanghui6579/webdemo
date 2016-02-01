@@ -202,7 +202,7 @@ jQuery(function ($) { "use strict";
 
 	$('#og-grid').mixItUp(); // Portfolio filter
 
-	Grid.init(); //Portfolio Grid Expand
+	// Grid.init(); //Portfolio Grid Expand
 	
 	
 	/* ========================================================================= */
