@@ -19,11 +19,11 @@
 
 body {
     background-color: #2B2C30;
-	font-family: 'Ubuntu', 'Arial', sans-serif;
+	font-family: 'FontAwesome', 'Arial', sans-serif;
     line-height: 1.5;
     color: #ddd;
 }
-
+/*font-family: 'Ubuntu', 'Arial', sans-serif;*/
 ol, ul {
     margin: 0;
     padding: 0;
@@ -57,10 +57,10 @@ a:focus, a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: oswald;
+    font-family: FontAwesome, sans-serif;
     font-weight: 400;
 }
-
+/*font-family: oswald;*/
 .kill-margin-bottom {
 	margin-bottom: 0 !important;
 }
@@ -275,21 +275,21 @@ h1, h2, h3, h4, h5, h6 {
 
 #slitSlider .carousel-caption h2 {
     color: #FFF;
-    font-family: Oswald, sans-serif;
+    font-family: FontAwesome, sans-serif;
     font-size: 70px;
     font-weight: 700;
     margin-bottom: 40px;
     text-transform: uppercase;
 }
-
+/*font-family: Oswald, sans-serif;*/
 #slitSlider .carousel-caption h3 {
     color: #FFF;
-    font-family: Oswald, sans-serif;
+    font-family: FontAwesome, sans-serif;
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 59px;
 }
-
+/*font-family: Oswald, sans-serif;*/
 
 
 /*=================================================================
@@ -526,21 +526,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .counters-item span {
     display: inline;
-    font-family: Oswald, sans-serif;
+    font-family: FontAwesome, sans-serif;
     font-size: 35px;
     line-height: 50px;
 }
-
+/*font-family: Oswald, sans-serif;*/
 .counters-item i {
     margin-bottom: 15px;
 }
 
 .counters-item h3 {
-	font-family: Ubuntu,sans-serif;
+	font-family: FontAwesome, sans-serif;
 	font-size: 20px;
 	margin: 0;
 }
-
+/*font-family: Ubuntu,sans-serif;*/
 
 /*=================================================================
 	Services section
@@ -847,11 +847,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .team-mate h3 {
-	font-family: Ubuntu,sans-serif;
+	font-family: FontAwesome, sans-serif;
 	font-size: 20px;
 	margin: 0 0 5px;
 }
-
+/*font-family: Ubuntu,sans-serif;*/
 .member-info {
 	padding: 15px;
 }
@@ -936,12 +936,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .price-title > h3 {
     color: #6cb670;
-    font-family: Oswald;
+    font-family: FontAwesome, sans-serif;
     font-weight: 700;
     margin: 0 0 10px;
     text-transform: uppercase;
 }
-
+/*font-family: Oswald;*/
 .price-title > p {
     font-size: 18px;
     font-weight: 400;
@@ -1004,11 +1004,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .client-meta h3 {
-  font-family: Ubuntu,sans-serif;
+  font-family: FontAwesome, sans-serif;
   font-size: 20px;
   margin: 15px 0 5px .0;
 }
-
+/*font-family: Ubuntu,sans-serif;*/
 .client-meta span {
   font-size: 12px;
 }
@@ -1216,7 +1216,7 @@ h1, h2, h3, h4, h5, h6 {
 ==================================================================*/
 
 .social-icon {
-    padding: 60px 0 35px;
+    padding: 35px 0 35px;
 }
 
 .social-icon > ul {
@@ -1228,25 +1228,22 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 20px;
 }
 
-.social-icon > ul > li > a {
-    background-color: #26292e;
+/* .social-icon > ul > li > a {
     display: block;
-    height: 70px;
-    width: 70px;
 
-	-webkit-transform: rotateY(180deg);
+	 -webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
-		-ms-transform: rotateY(180deg);
-		 -o-transform: rotateY(180deg);
-			transform: rotateY(180deg);
-
-	-webkit-transition: all 400ms ease-out 0s;
+	 		-ms-transform: rotateY(180deg);
+	 		 -o-transform: rotateY(180deg);
+	 			transform: rotateY(180deg);
+	 	
+	 	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
-		 -o-transition: all 400ms ease-out 0s;
-			transition: all 400ms ease-out 0s;
-}
+	 		 -o-transition: all 400ms ease-out 0s;
+	 			transition: all 400ms ease-out 0s;
+} */
 
-.social-icon > ul > li > a > i {
+/* .social-icon > ul > li > a > i {
     color: #55606a;
     display: inline-block;
     font-size: 32px;
@@ -1256,48 +1253,48 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.3;
     filter: alpha(opacity=30);
 
-	-webkit-transform: rotateY(180deg);
+	 -webkit-transform: rotateY(180deg);
 	   -moz-transform: rotateY(180deg);
 		-ms-transform: rotateY(180deg);
 		 -o-transform: rotateY(180deg);
 			transform: rotateY(180deg);
-
+	
 	-webkit-transition: all 400ms ease-out 0s;
 	   -moz-transition: all 400ms ease-out 0s;
 		 -o-transition: all 400ms ease-out 0s;
-			transition: all 400ms ease-out 0s;
-}
+			transition: all 400ms ease-out 0s; 
+} */
 
-.social-icon > ul > li:hover a {
-    background-color: #6CB670;
+/*  .social-icon > ul > li:hover a {
+   background-color: #6CB670;
 	
-	-webkit-transform: rotateY(0deg);
+	 -webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
 		-ms-transform: rotateY(0deg);
 		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);
-}
+			transform: rotateY(0deg); 
+}  */
 
-.social-icon > ul > li:hover a i {
-    color: #fff;
+.social-icon > ul > li:hover a {
+    color: #6CB670;
     opacity: 1;
     filter: alpha(opacity=100);
 	
-	-webkit-transform: rotateY(0deg);
+	/* -webkit-transform: rotateY(0deg);
 	   -moz-transform: rotateY(0deg);
 		-ms-transform: rotateY(0deg);
 		 -o-transform: rotateY(0deg);
-			transform: rotateY(0deg);
+			transform: rotateY(0deg); */
 }
 
 .copyright {
-    padding: 20px 0;
+    padding: 0 0 20px;
     color: #fff;
 }
 
-.copyright > img {
+/* .copyright > img {
     margin-bottom: 15px;
-}
+} */
 
 #scrollUp {
     border: 1px solid #4e595f;

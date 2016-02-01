@@ -14,7 +14,7 @@ jQuery(function ($) { "use strict";
 	/*	FitVids js
 	/* =========================================================================== */
 	
-	$(".media-wrapper").fitVids();
+	// $(".media-wrapper").fitVids();
 
 	
 	/* ========================================================================= */
@@ -54,7 +54,7 @@ jQuery(function ($) { "use strict";
 	/*	Post image slider
 	/* ========================================================================= */
 	
-	$("#post-thumb, #gallery-post").owlCarousel({
+	/*$("#post-thumb, #gallery-post").owlCarousel({
 
 		navigation : true,
 		pagination : false,
@@ -64,7 +64,7 @@ jQuery(function ($) { "use strict";
 		singleItem:true,
 		navigationText : ["<i class='fa fa-angle-left fa-2x'></i>","<i class='fa fa-angle-right fa-2x'></i>"]
 
-	});
+	});*/
 	
 	$("#features").owlCarousel({
 		navigation : true,
@@ -120,18 +120,17 @@ jQuery(function ($) { "use strict";
 	});
 	
 
-
 	/* ========================================================================= */
 	/*	Fix Slider Height
 	/* ========================================================================= */	
 
-	var slideHeight = $(window).height();
+	/*var slideHeight = $(window).height();
 	
 	$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
 
 	$(window).resize(function(){'use strict',
 		$('#slitSlider, .sl-slider, .sl-content-wrapper').css('height',slideHeight);
-	});
+	});*/
 	
 	
 
@@ -190,11 +189,11 @@ jQuery(function ($) { "use strict";
 	/*	Twitter Feed
 	/* ========================================================================= */
 	
-	$(".tweet").twittie({
+	/*$(".tweet").twittie({
         dateFormat: "%b. %d, %Y",
         template: "{{tweet}}",
         count: 1
-    });
+    });*/
 
 
 	/* ========================================================================= */
@@ -309,7 +308,7 @@ jQuery(function ($) { "use strict";
 	/*	Google Map Customization
 	/* =========================================================================  */
 
-	function initialize() {
+	/*function initialize() {
 
 		var myLatLng = new google.maps.LatLng(22.333851, 91.812256);
 
@@ -423,7 +422,7 @@ jQuery(function ($) { "use strict";
 		map.setMapTypeId('roadatlas');
 	}
 
-	google.maps.event.addDomListener(window, "load", initialize);
+	google.maps.event.addDomListener(window, "load", initialize);*/
 
 
 });
@@ -443,7 +442,7 @@ jQuery(function ($) { "use strict";
 /*	Home page Slider
 /* ========================================================================= */
 
-$(function() {
+/*$(function() {
 
 	var Page = (function() {
 
@@ -496,7 +495,7 @@ $(function() {
 
 	Page.init();
 
-});
+});*/
 
 
 /* ========================================================================= */
@@ -509,8 +508,8 @@ $(function() {
 function parallaxInit() {
 	$('#counter').parallax("50%", 0.3);
 	$('#team-skills').parallax("50%", 0.3);
-	$('#twitter-feed').parallax("50%", 0.3);
-	$('#testimonial').parallax("50%", 0.3);
+	// $('#twitter-feed').parallax("50%", 0.3);
+	// $('#testimonial').parallax("50%", 0.3);
 }
 
 $(window).bind("load", function () {
