@@ -203,6 +203,7 @@ h1, h2, h3, h4, h5, h6 {
     border-right: 3px solid #ddd;
     display: inline-block;
     padding: 5px 25px;
+    margin-top: 50px;
     text-transform: uppercase;
 }
 
@@ -433,6 +434,58 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 75px 0;
 }
 
+.icon-show {
+	position: relative;
+	width: 160px; 
+	height: 92.38px;
+	background-color: transparent;
+	margin: 0 auto;
+	padding: 20px 0;
+	
+	
+	-webkit-transform: translateZ(0px);
+	   -moz-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		 -o-transform: translateZ(0px);
+			transform: translateZ(0px);
+
+	-webkit-transition-duration: 0.3s;
+	   -moz-transition-duration: 0.3s;
+		 -o-transition-duration: 0.3s;
+			transition-duration: 0.3s;
+
+	-webkit-transition-property: transform;
+	   -moz-transition-property: transform;
+		 -o-transition-property: transform;
+			transition-property: transform;
+}
+
+.icon-show:hover {
+	 -webkit-transform: scale3d(1.5, 1.5, 1.5);
+	   -moz-transform: scale3d(1.5, 1.5, 1.5);
+		-ms-transform: scale3d(1.5, 1.5, 1.5);
+		 -o-transform: scale3d(1.5, 1.5, 1.5);
+			transform: scale3d(1.5, 1.5, 1.5); 
+}
+
+.icon-show:before,
+.icon-show:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 113.14px;
+	height: 113.14px;
+	background-color: inherit;
+	left: 20.4315px;
+	top: -56.5685px;
+
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	   -moz-transform: scaleY(0.5774) rotate(-45deg);
+		-ms-transform: scaleY(0.5774) rotate(-45deg);
+		 -o-transform: scaleY(0.5774) rotate(-45deg);
+			transform: scaleY(0.5774) rotate(-45deg);
+}
+
 
 /*=================================================================
 	About us section
@@ -477,8 +530,8 @@ h1, h2, h3, h4, h5, h6 {
 			transform: translateY(-10px);
 }
 
-.icon-box:before,
-.icon-box:after {
+.icon-box:before, .icon-show:before,
+.icon-box:after, .icon-show:after {
 	content: "";
 	position: absolute;
 	z-index: 1;
@@ -653,6 +706,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .og-grid .mix a img {
+	width: 100%;
+	height: 100%;
 	-webkit-transition: all 0.6s ease 0s;
 	   -moz-transition: all 0.6s ease 0s;
 		 -o-transition: all 0.6s ease 0s;
@@ -674,7 +729,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     position: absolute;
     background-color: rgba(43, 44, 48, 0.8);
-	
+	vertical-align: middle;
 	opacity: 0;
 	filter: alpha(opacity=0);
 	
@@ -708,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 11px 0;
 	position: absolute;
 	text-align: center;
-	top: 22%;
+	top: 40%;
 	width: 50px;
 }
 
@@ -797,6 +852,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .member-photo img {
+	width: 100%;
+	height: 100%;
 	-webkit-transition: all 0.6s ease 0s;
 	   -moz-transition: all 0.6s ease 0s;
 		 -o-transition: all 0.6s ease 0s;
