@@ -953,7 +953,7 @@ h1, h2, h3, h4, h5, h6 {
 	Twitter Feed
 ==================================================================*/
 
-#twitter-feed {
+/* #twitter-feed {
 	background-image: url("../img/parallax/twitter.jpg");
 	padding-bottom: 100px;
 	padding-top: 80px;
@@ -979,7 +979,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .tweet a {
     color: #6cb670;
-}
+} */
 
 /*=================================================================
 	Pricing section
@@ -1042,7 +1042,7 @@ h1, h2, h3, h4, h5, h6 {
 	Testimonial section
 ==================================================================*/
 
-#testimonial {
+/* #testimonial {
     background-image: url(../img/parallax/bicycle.jpg);
     padding: 70px 0;
 }
@@ -1072,7 +1072,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   margin: 15px 0 5px .0;
 }
-/*font-family: Ubuntu,sans-serif;*/
+font-family: Ubuntu,sans-serif;
 .client-meta span {
   font-size: 12px;
 }
@@ -1102,7 +1102,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-profile li a:hover {
 	color: #6CB670;
-}
+} */
 
 .owl-pagination,
 .owl-buttons {
