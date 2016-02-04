@@ -192,23 +192,23 @@
         width: 70%;
     }
 
-    #slitSlider .carousel-caption h2 {
+    /* #slitSlider .carousel-caption h2 {
         font-size: 24px;
         letter-spacing: 0.5px;
         line-height: 35px;
         margin-bottom: 25px;
     }
-
+    
     #slitSlider .carousel-caption h3 {
         font-size: 20px;
         letter-spacing: 0.5px;
         line-height: 28px;
         margin-bottom: 25px;
     }
-
+    
     #slitSlider .carousel-caption a {
         font-size: 14px;
-    }
+    } */
 
     #nav-dots {
         display: block;
@@ -223,19 +223,34 @@
         padding-bottom: 10px;
     }
 
-    .navbar-inverse .navbar-toggle,
-	.navbar-inverse .navbar-toggle .icon-bar {
-        border-color: #4e595f;
-        border-radius: 0;
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: #E23B37;
     }
 
-    .navbar-inverse .navbar-toggle:hover {
-        border-color: #ddd;
+    .navbar-inverse .navbar-toggle,
+	.navbar-inverse .navbar-toggle .icon-bar {
+        border-color: #E23B37;
         border-radius: 0;
+        color: #fff;
+
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+    }
+
+    .navbar-inverse .navbar-toggle:focus, 
+    .navbar-inverse .navbar-toggle:hover {
+        border-color: #E23B37;
+        border-radius: 0;
+        background-color: #fff;
+        color: #fff;
+
+        opacity: 1;
+        filter: alpha(opacity=100);
     }
 
     .navbar-inverse .navbar-toggle .icon-bar:hover {
-        background-color: #ddd;
+        background-color: #fff;
+        color: #fff;
     }
 
     .navbar-collapse.in {

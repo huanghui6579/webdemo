@@ -25,10 +25,12 @@ jQuery(function ($) { "use strict";
 		cursorborderradius: 0,
 		cursorwidth: "8px",
 		cursorfixedheight: 150,
-		cursorcolor: "#6CB670",
+		cursorcolor: "#E23B37",
 		zindex: 9999,
 		cursorborder: 0,
 	});
+
+	var navHeight = $("#navigation").outerHeight();
 
 
 	/* ========================================================================= */
@@ -39,7 +41,13 @@ jQuery(function ($) { "use strict";
 		if ($(window).scrollTop() > 400) {
 			$("#scrollUp").fadeIn(200);
 		} else {
-			$("#scrollUp").fadeOut(200);
+			$("#scrollUp").fadeOut(200);//
+		}
+
+		if ($(window).scrollTop() > navHeight) {
+			$("#navigation").addClass("box-shadow");
+		} else {
+			$("#navigation").removeClass("box-shadow");
 		}
 	});
 	
