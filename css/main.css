@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn:focus {
-	color: #ddd;
+	/* color: #ddd; */
 }
 
 .btn-green {
@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-transparent:focus {
-    background-color: transparent;
+    /* background-color: transparent; */
     border-color: #E23B37;
 }
 

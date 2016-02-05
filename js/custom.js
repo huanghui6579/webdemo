@@ -243,7 +243,7 @@ jQuery(function ($) { "use strict";
 		var name = $('#name').val();
 		var email = $('#email').val();
 		var subject = $('#subject').val();
-		var message = $('#message').val();
+		var content = $('#content').val();
 
 		/* in the next section we do the checking by using VARIABLE.length
 		where VARIABLE is the variable we are checking (like name, email),
@@ -274,11 +274,11 @@ jQuery(function ($) { "use strict";
 		} else {
 			$('#subject').css("border-color", "#666");
 		}
-		if (message.length == 0) {
+		if (content.length == 0) {
 			var error = true;
-			$('#message').css("border-color", "#D8000C");
+			$('#content').css("border-color", "#D8000C");
 		} else {
-			$('#message').css("border-color", "#666");
+			$('#content').css("border-color", "#666");
 		}
 
 		//now when the validation is done we check if the error variable is false (no errors)
@@ -287,15 +287,57 @@ jQuery(function ($) { "use strict";
 			//and change the button text to Sending...
 			$('#contact-submit').attr({
 				'disabled': 'false',
-				'value': 'Sending...'
+				'value': '正在提交...'
 			});
 
 			/* using the jquery's post(ajax) function and a lifesaver
 			function serialize() which gets all the data from the form
 			we submit it to send_email.php */
-			$.post("sendmail.php", $("#contact-form").serialize(), function (result) {
+			/*var ipApi = 'http://pv.sohu.com/cityjson?ie=utf-8&callback=?&_='+Math.random(); 
+			$.ajax({
+				url: ipApi,
+				type:'GET', 
+				dataType: "JSONP  text/json",  // 处理Ajax跨域问题,
+				success: function(result) {
+					console.info(result);
+				}
+			});*/
+            var url = 'http://chaxun.1616.net/s.php?type=ip&output=json&callback=?&_='+Math.random(); 
+            // var url = 'http://pv.sohu.com/cityjson?ie=utf-8&callback=?&_='+Math.random(); 
+            var jqxhr = $.getJSON(url, function(data){
+    	    }).complete(function(data) {
+    	    	var ip = data.responseJSON.Ip;
+    	    	var subUrl = "http://localhost:8080/chatapi/api/home/submitComment";
+    	    	var paramObj = $("#contact-form").serializeObject();
+    	    	paramObj.ip = ip;
+    	    	$.ajax({
+    	    		type: "POST",
+    	    		url: subUrl,
+    	    		dataType: "json",
+    	    		data: JSON.stringify(paramObj),
+    	    		success: function(data) {
+    	    			if (data.resultCode == '100') {	//成功
+    	    				//if the mail is sent remove the submit paragraph
+    	    				$('#cf-submit').remove();
+    	    				//and show the mail success div with fadeIn
+    	    				$('#mail-success').fadeIn(500);
+    	    			} else {
+    	    				//show the mail failed div
+    	    				$('#mail-fail').fadeIn(500);
+    	    				//re enable the submit button by removing attribute disabled and change the text back to Send The Message
+    	    				$('#contact-submit').removeAttr('disabled').attr('value', '提交');
+    	    			}
+    	    		}
+    	    		
+    	    	}).fail(function() {
+    	    		$('#contact-submit').removeAttr('disabled').attr('value', '提交失败，请稍候再试');
+    	    	});
+    	    });                    
+			/*
+			//ipApi$("#contact-form").serialize(), function (result) {
+				//console.info(result);
 				//and after the ajax request ends we check the text returned
-				if (result == 'sent') {
+				/*if (result == 'sent') {
 					//if the mail is sent remove the submit paragraph
 					$('#cf-submit').remove();
 					//and show the mail success div with fadeIn
@@ -304,9 +346,9 @@ jQuery(function ($) { "use strict";
 					//show the mail failed div
 					$('#mail-fail').fadeIn(500);
 					//re enable the submit button by removing attribute disabled and change the text back to Send The Message
-					$('#contact-submit').removeAttr('disabled').attr('value', 'Send The Message');
-				}
-			});
+					$('#contact-submit').removeAttr('disabled').attr('value', '提交');
+				}*/
+			//}
 		}
 	});
 
@@ -514,13 +556,30 @@ jQuery(function ($) { "use strict";
 "use strict";
 
 function parallaxInit() {
-	$('#counter').parallax("50%", 0.3);
-	$('#team-skills').parallax("50%", 0.3);
+	// $('#counter').parallax("50%", 0.3);
+	// $('#team-skills').parallax("50%", 0.3);
 	// $('#twitter-feed').parallax("50%", 0.3);
 	// $('#testimonial').parallax("50%", 0.3);
 }
 
 $(window).bind("load", function () {
-    parallaxInit()
+    //parallaxInit()
 });
+
+$.fn.serializeObject = function()
+{
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function() {
+        if (o[this.name] !== undefined) {
+            if (!o[this.name].push) {
+                o[this.name] = [o[this.name]];
+            }
+            o[this.name].push(this.value || '');
+        } else {
+            o[this.name] = this.value || '';
+        }
+    });
+    return o;
+};
                             
