@@ -313,10 +313,11 @@ jQuery(function ($) { "use strict";
     	    	$.ajax({
     	    		type: "POST",
     	    		url: subUrl,
+    	    		contentType: "application/json;charset=UTF-8",
     	    		dataType: "json",
     	    		data: JSON.stringify(paramObj),
     	    		success: function(data) {
-    	    			if (data.resultCode == '100') {	//成功
+    	    			if (data.resultCode == 100) {	//成功
     	    				//if the mail is sent remove the submit paragraph
     	    				$('#cf-submit').remove();
     	    				//and show the mail success div with fadeIn
