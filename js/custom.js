@@ -11,6 +11,13 @@ jQuery(function ($) { "use strict";
 	}
 
 	/* =========================================================================== */
+	/*	Mobile menu item click toggle
+	/* =========================================================================== */
+	$(".navbar-nav li a").click(function(event) {
+        $(".navbar-collapse").collapse('hide');
+    });
+
+	/* =========================================================================== */
 	/*	FitVids js
 	/* =========================================================================== */
 	
@@ -307,7 +314,7 @@ jQuery(function ($) { "use strict";
             var jqxhr = $.getJSON(url, function(data){
     	    }).complete(function(data) {
     	    	var ip = data.responseJSON.Ip;
-    	    	var subUrl = "http://localhost:8080/chatapi/api/home/submitComment";
+    	    	var subUrl = "http://www.ibaixin.net/chatapi/api/home/submitComment";
     	    	var paramObj = $("#contact-form").serializeObject();
     	    	paramObj.ip = ip;
     	    	$.ajax({
